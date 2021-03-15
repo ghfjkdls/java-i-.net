@@ -1,0 +1,16 @@
+/home/ja/framework net/Lab1/bin/Debug/net5.0/Lab1
+/home/ja/framework net/Lab1/bin/Debug/net5.0/Lab1.deps.json
+/home/ja/framework net/Lab1/bin/Debug/net5.0/Lab1.runtimeconfig.json
+/home/ja/framework net/Lab1/bin/Debug/net5.0/Lab1.runtimeconfig.dev.json
+/home/ja/framework net/Lab1/bin/Debug/net5.0/Lab1.dll
+/home/ja/framework net/Lab1/bin/Debug/net5.0/ref/Lab1.dll
+/home/ja/framework net/Lab1/bin/Debug/net5.0/Lab1.pdb
+/home/ja/framework net/Lab1/obj/Debug/net5.0/Lab1.csprojAssemblyReference.cache
+/home/ja/framework net/Lab1/obj/Debug/net5.0/Lab1.GeneratedMSBuildEditorConfig.editorconfig
+/home/ja/framework net/Lab1/obj/Debug/net5.0/Lab1.AssemblyInfoInputs.cache
+/home/ja/framework net/Lab1/obj/Debug/net5.0/Lab1.AssemblyInfo.cs
+/home/ja/framework net/Lab1/obj/Debug/net5.0/Lab1.csproj.CoreCompileInputs.cache
+/home/ja/framework net/Lab1/obj/Debug/net5.0/Lab1.dll
+/home/ja/framework net/Lab1/obj/Debug/net5.0/ref/Lab1.dll
+/home/ja/framework net/Lab1/obj/Debug/net5.0/Lab1.pdb
+/home/ja/framework net/Lab1/obj/Debug/net5.0/Lab1.genruntimeconfig.cache
