@@ -1,0 +1,16 @@
+/home/ja/studia/net i java/lab2/obj/Debug/net5.0/lab2.csprojAssemblyReference.cache
+/home/ja/studia/net i java/lab2/obj/Debug/net5.0/lab2.GeneratedMSBuildEditorConfig.editorconfig
+/home/ja/studia/net i java/lab2/obj/Debug/net5.0/lab2.AssemblyInfoInputs.cache
+/home/ja/studia/net i java/lab2/obj/Debug/net5.0/lab2.AssemblyInfo.cs
+/home/ja/studia/net i java/lab2/obj/Debug/net5.0/lab2.csproj.CoreCompileInputs.cache
+/home/ja/studia/net i java/lab2/bin/Debug/net5.0/lab2
+/home/ja/studia/net i java/lab2/bin/Debug/net5.0/lab2.deps.json
+/home/ja/studia/net i java/lab2/bin/Debug/net5.0/lab2.runtimeconfig.json
+/home/ja/studia/net i java/lab2/bin/Debug/net5.0/lab2.runtimeconfig.dev.json
+/home/ja/studia/net i java/lab2/bin/Debug/net5.0/lab2.dll
+/home/ja/studia/net i java/lab2/bin/Debug/net5.0/ref/lab2.dll
+/home/ja/studia/net i java/lab2/bin/Debug/net5.0/lab2.pdb
+/home/ja/studia/net i java/lab2/obj/Debug/net5.0/lab2.dll
+/home/ja/studia/net i java/lab2/obj/Debug/net5.0/ref/lab2.dll
+/home/ja/studia/net i java/lab2/obj/Debug/net5.0/lab2.pdb
+/home/ja/studia/net i java/lab2/obj/Debug/net5.0/lab2.genruntimeconfig.cache
