@@ -1,0 +1,16 @@
+/home/ja/studia/net i java/watki/obj/Debug/net5.0/watki.csprojAssemblyReference.cache
+/home/ja/studia/net i java/watki/obj/Debug/net5.0/watki.GeneratedMSBuildEditorConfig.editorconfig
+/home/ja/studia/net i java/watki/obj/Debug/net5.0/watki.AssemblyInfoInputs.cache
+/home/ja/studia/net i java/watki/obj/Debug/net5.0/watki.AssemblyInfo.cs
+/home/ja/studia/net i java/watki/obj/Debug/net5.0/watki.csproj.CoreCompileInputs.cache
+/home/ja/studia/net i java/watki/bin/Debug/net5.0/watki
+/home/ja/studia/net i java/watki/bin/Debug/net5.0/watki.deps.json
+/home/ja/studia/net i java/watki/bin/Debug/net5.0/watki.runtimeconfig.json
+/home/ja/studia/net i java/watki/bin/Debug/net5.0/watki.runtimeconfig.dev.json
+/home/ja/studia/net i java/watki/bin/Debug/net5.0/watki.dll
+/home/ja/studia/net i java/watki/bin/Debug/net5.0/ref/watki.dll
+/home/ja/studia/net i java/watki/bin/Debug/net5.0/watki.pdb
+/home/ja/studia/net i java/watki/obj/Debug/net5.0/watki.dll
+/home/ja/studia/net i java/watki/obj/Debug/net5.0/ref/watki.dll
+/home/ja/studia/net i java/watki/obj/Debug/net5.0/watki.pdb
+/home/ja/studia/net i java/watki/obj/Debug/net5.0/watki.genruntimeconfig.cache
