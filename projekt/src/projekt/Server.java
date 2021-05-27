@@ -37,7 +37,22 @@ public class Server{
                     System.out.println(array[i][0]+" "+array[i][1]);
                 }
                 
-
+                DataOutputStream outToClient = new DataOutputStream(socket.getOutputStream());
+                for (int i = 0; i < array.length; i++) {
+                    outToClient.writeDouble(array[i][0]);//+" "+array[i][1]);
+                    outToClient.writeDouble(array[i][1]);
+                }
+                
+                /*
+                try {
+                	Obiect obj = array;
+                	ObjectOutputStream objectOutput = new ObjectOutputStream(socket.getOutputStream());
+                    objectOutput.writeObject(obj);
+                }catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+                //*/
                 OutputStream output = socket.getOutputStream();//wysylanie informacji zwrotnej
                 PrintWriter writer = new PrintWriter(output, true);
                 String str = Double.toString(wynik);
