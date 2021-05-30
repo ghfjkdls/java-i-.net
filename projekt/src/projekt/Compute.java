@@ -2,13 +2,15 @@ package projekt;
 
 public class Compute extends Thread{
 	private int begin=0, end=0;
-	public static double a1, a2, a3;
+	public static double a1, a2, a3, a4, a5;
 	public static double[][] array = new double[8][2]; 
 	
-	public Compute(double aa1, double aa2, double aa3) {
+	public Compute(double aa1, double aa2, double aa3, double aa4, double aa5) {
 		a1=aa1;
 		a2=aa2;
 		a3=aa3;
+		a4=aa4;
+		a5=aa5;
 	}
 	
 	public Compute(int beginC, int endC) {
@@ -35,9 +37,7 @@ public class Compute extends Thread{
         		|| thread3.isAlive() || thread4.isAlive()) {
             //serwer czeka az skoncza sie watki
           }
-        //for(int i=0; i<array.length; i++) {
-           //      System.out.println("koniec: "+array[i][0]+" "+array[i][1]);
-           //  }
+
 		
 		return array;
 	}
@@ -45,7 +45,7 @@ public class Compute extends Thread{
 	public void run() {
         System.out.println("test watku "+begin+" "+end);
         for(int i=begin; i<=end; i++) {
-        	array[i][1] = a1*i*i + a2*i + a3;
+        	array[i][1] = a1*Math.pow(i, 4) + a2*Math.pow(i, 3) + a3*Math.pow(i, 2)+a4*i+a5;
             System.out.println("test obliczen "+i+" "+array[i][0]+" "+array[i][1]);
         }
         

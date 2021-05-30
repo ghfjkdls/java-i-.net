@@ -23,40 +23,40 @@ public class Server{
                 Socket socket = serverSocket.accept();
 
                 System.out.println("New client connected");//polaczenie z klientem
-                
-                InputStream input = socket.getInputStream();//odbieranie wiamosci od klienta
-                BufferedReader reader = new BufferedReader(new InputStreamReader(input));
-                String get = reader.readLine();
-                System.out.println(get);
-                
+
+                //cztanie tablicy wspolczynnikow wieolomianu
+                double[] wspWielomianu = new double[5];
+                DataInputStream inFromClient = new DataInputStream(socket.getInputStream());
+            	for(int i=0;i<wspWielomianu.length;i++) {
+            		System.out.println("czytam");
+            		wspWielomianu[i]=inFromClient.readDouble();
+            	}
+            	//testowe wypisanie tablicy wspolczynnikow wieolomianu
+            	for(int i=0;i<wspWielomianu.length;i++) {
+            		System.out.println("a"+(i+1)+" = " + wspWielomianu[i]);
+            	}
                
-                
-                Compute comp = new Compute(2, 1, -6); //obliczenia
+                //obliczanie punktow wielomianu
+                Compute comp = new Compute(wspWielomianu[0], wspWielomianu[1],
+                		wspWielomianu[2], wspWielomianu[3], wspWielomianu[4]); //obliczenia
                 array = comp.resolve();
                 for(int i=0; i<array.length; i++) {
                     System.out.println(array[i][0]+" "+array[i][1]);
                 }
                 
+                
+                //wysylanie tablicy policzonych ponktow
                 DataOutputStream outToClient = new DataOutputStream(socket.getOutputStream());
                 for (int i = 0; i < array.length; i++) {
                     outToClient.writeDouble(array[i][0]);//+" "+array[i][1]);
                     outToClient.writeDouble(array[i][1]);
                 }
                 
-                /*
-                try {
-                	Obiect obj = array;
-                	ObjectOutputStream objectOutput = new ObjectOutputStream(socket.getOutputStream());
-                    objectOutput.writeObject(obj);
-                }catch (IOException e)
-                {
-                    e.printStackTrace();
-                }
-                //*/
-                OutputStream output = socket.getOutputStream();//wysylanie informacji zwrotnej
-                PrintWriter writer = new PrintWriter(output, true);
-                String str = Double.toString(wynik);
-                writer.println(str);
+
+               // OutputStream output = socket.getOutputStream();//wysylanie informacji zwrotnej
+              //  PrintWriter writer = new PrintWriter(output, true);
+              //  String str = Double.toString(wynik);
+              //  writer.println(str);
             }
 
         } catch (IOException ex) {

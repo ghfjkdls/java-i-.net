@@ -19,23 +19,17 @@ public class Client {
 
         try (Socket socket = new Socket(hostname, port)) {
         	
-        	String str = input.next();//wysylanie stringa na serwer
-        	OutputStream output = socket.getOutputStream();
-        	PrintWriter writer = new PrintWriter(output, true);
-        	writer.println(str);
+        	double[] wspWielomianu = new double[5];
+        	
+        	for (int i = 0; i < wspWielomianu.length; i++) {
+        		System.out.println("podaj a"+(i+1));
+                wspWielomianu[i]=input.nextDouble();
+            }
+        	DataOutputStream outToServer = new DataOutputStream(socket.getOutputStream());
+            for (int i = 0; i < wspWielomianu.length; i++) {
+                outToServer.writeDouble(wspWielomianu[i]);
+            }
 
-        	/*
-        	
-        	 ObjectInputStream objectInput = new ObjectInputStream(socket.getInputStream());
-             try {
-                 Object object = objectInput.readObject();
-                 array =   object;
-                 System.out.println(array);
-             } catch (ClassNotFoundException e) {             
-                 e.printStackTrace();
-             }
-        	
-        	*/
         	DataInputStream inFromServer = new DataInputStream(socket.getInputStream());
         	for(int i=0;i<array.length;i++) {
                 array[i][0]=inFromServer.readDouble();
@@ -46,12 +40,6 @@ public class Client {
                 System.out.println(array[i][0]+" "+array[i][1]);
             }
         	
-        	
-            InputStream inputStream = socket.getInputStream();//odebranie danych z serwera
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-            String response = reader.readLine();
-            System.out.println(response);
-
 
         } catch (UnknownHostException ex) {
 
